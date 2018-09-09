@@ -4,7 +4,7 @@ from os import remove
 from os.path import isfile, join
 from shutil import rmtree
 protected = ['.git', 'testlib']
-track_types = ['cpp', 'py', 'md', 'jpg', 'compile']
+track_types = ['cpp', 'py', 'md', 'jpg', 'compile', 'tex']
 cur = '.'
 trash = []
 dirs = []
