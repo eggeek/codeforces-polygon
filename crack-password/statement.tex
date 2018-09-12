@@ -1,0 +1,9 @@
+Recently we update the security system in Monash Claytown campus, 
+the new system now supports unlimited length of password.
+
+Password in the system is an integer (it can be as large as you want), and for the sake of
+security, instead of storing password itself, we store the \text{compressed-key} of password in
+our database, where \text{compressed-key} is the sum of each digital of the password, for
+example, the \text{compressed-key} of password \text{12390} is \text{15} ($1+2+3+9+0$).
+
+Given a compressed-key, what's the minimum value of the corresponding password?
