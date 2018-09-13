@@ -1,0 +1,8 @@
+Darcy has three matrix \text{A}($1*n$),\text{B}($n*m$),\text{C}($1*m$):
+each element of matrix is either 0 or 1. We define $A \cdot B = C$ as:
+$$
+  C_{k=1}^{k=m}[k] = (\sum_{i=1}^{i=n} A[1][i] \cdot B[i][k]) \bmod 2
+$$
+
+Now Darcy knows matrix \text{C}, he wants to know how many different matrix \text{A,C} such
+that $A \cdot B = C$.
