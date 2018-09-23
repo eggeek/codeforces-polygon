@@ -1,0 +1,11 @@
+Monash University is going to build a new railway to link Coalfield and Claytown campus.
+Now we already get the blueprint: there are $n$ vertices in the blueprint ($1$ to $n$),
+and we know the length of each directed edge from $i$ to $j$.
+
+Let $d(u, v, w)$ be the length of shortest path from $u$ to $w$ without pass $v$,
+the \textbf{convenient value} $P$ is:
+$$
+P = \sum_{1 \le x,y,z \le n, x \neq y, y \neq z}d(x,y,z)
+$$
+
+We want to know the \textbf{convenient value} of the given blueprint. 
