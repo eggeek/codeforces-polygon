@@ -1,0 +1,35 @@
+On Unix computers, data is stored in directories. There is one root directory, and this might
+have several directories contained inside of it, each with different names. These directories
+might have even more directories contained inside of them, and so on.
+
+A directory is uniquely identified by its name and its parent directory (the directory it is
+directly contained in). This is usually encoded in a path, which consists of several parts each
+preceded by a forward slash ('/'). The final part is the name of the directory, and everything
+else gives the path of its parent directory. For example, consider the path:
+
+\t{/home/anzac/round4}
+
+This refers to the directory with name \t{"round4"} in the directory described by \t{"/home/anzac"},
+which in turn refers to the directory with name \t{"anzac"} in the directory described by the path
+\t{"/home"}. In this path, there is only one part, which means it refers to the directory with the
+name \t{"home"} in the root directory.
+
+To create a directory, you can use the \t{mkdir} command. You specify a path, and then mkdir will
+create the directory described by that path, but only if the parent directory already exists.
+For example, if you wanted to create the \t{"/home/anzac/round4"} and \t{"/home/anzac/finals"} directories
+from scratch, you would need four commands:
+
+\begin{itemize}
+  \item \t{mkdir /home}
+  \item \t{mkdir /home/anzac}
+  \item \t{mkdir /home/anzac/round4}
+  \item \t{mkdir /home/anzac/finals}
+\end{itemize}
+
+Given the full set of directories already existing on your computer, and a set of new
+directories you want to create if they do not already exist, how many mkdir commands do you
+need to use?
+
+A path consists of one or more lower-case alpha-numeric strings (i.e., strings containing only
+the symbols 'a'-'z' and '0'-'9'), each preceded by a single forward slash. These alpha-numeric
+strings are never empty.
