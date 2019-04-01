@@ -1,0 +1,20 @@
+Alice and Bob are playing a game (again!):
+
+Alice choices a number $x$ in mind and let Bob guesses.
+At the beginning, Bob only knows that $x$ is in range $[l, r]$,
+and in each time he guesses a number $y$, Alice tells him the relationship between $x$ and $y$.
+Bob needs to pay price $a$ if $x<y$, and price $b$ if $x>y$.
+The game keep going until Bob finds the correct value of $x$.
+
+Bob wants to know the minimum cost to find the correct number in the worst case.
+
+\section{Input}
+The first line contains two integers $1 \le l \le r \le 100$,
+the second line contains two integers $1 \le a, b \le 100$.
+
+
+\section{Output}
+One line contains two integers:
+
+ $x$, the choice of Alice that maximum Bob's cost,
+ and $c$ the corresponding cost if Bob plays in the best strategy.
