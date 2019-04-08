@@ -11,5 +11,14 @@ mkdir statement
 touch statement/legend.tex
 touch statement/input.tex
 touch statement/output.tex
+cp ../resources/olymp.sty statement/
+cp ../resources/problem.tex statement/
+cp ../resources/statement.ftl statement/
+cp ../resources/Makefile statement/
+cp ../resources/master.tex statement/
 
 cp ../compile .
+
+cd ..
+echo "Created:"
+tree $name
