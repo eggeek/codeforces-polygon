@@ -1,0 +1,15 @@
+#!/bin/bash
+
+name=$1
+
+mkdir $name
+
+cd $name
+ln -s ../resources/testlib.h .
+
+mkdir statement
+touch statement/legend.tex
+touch statement/input.tex
+touch statement/output.tex
+
+cp ../compile .
