@@ -18,6 +18,7 @@ cp ../resources/Makefile statement/
 cp ../resources/master.tex statement/
 
 cp ../compile .
+cp ../resources/*.cpp .
 
 cd ..
 echo "Created:"
