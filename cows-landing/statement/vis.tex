@@ -1,0 +1,24 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{zzttqq}{rgb}{0.6,0.2,0.}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=5.0cm,y=5.0cm]
+\clip(-2.5,0.5) rectangle (2.5,5.5);
+\fill[line width=2.pt,color=zzttqq,fill=zzttqq,fill opacity=0.10000000149011612] (-2.,5.) -- (-2.,1.) -- (2.,1.) -- (2.,5.) -- cycle;
+\draw [line width=2.pt,color=zzttqq] (-2.,5.)-- (-2.,1.);
+\draw [line width=2.pt,color=zzttqq] (-2.,1.)-- (2.,1.);
+\draw [line width=2.pt,color=zzttqq] (2.,1.)-- (2.,5.);
+\draw [line width=2.pt,color=zzttqq] (2.,5.)-- (-2.,5.);
+\draw [line width=2.pt,dash pattern=on 13pt off 13pt] (-2.,3.)-- (2.,3.);
+\draw [line width=2.pt,dash pattern=on 13pt off 13pt] (0.,5.)-- (0.,3.);
+\draw [line width=2.pt,dash pattern=on 13pt off 13pt] (0.,3.)-- (0.,1.);
+\draw (-1.2535962452735088,4.217884811749692) node[anchor=north west] {A};
+\draw (0.7539014940314088,4.217884811749692) node[anchor=north west] {B};
+\draw (0.7539014940314088,2.2103870724447745) node[anchor=north west] {C};
+\draw (-1.2535962452735088,2.2103870724447745) node[anchor=north west] {D};
+\end{tikzpicture}
+\end{document}
