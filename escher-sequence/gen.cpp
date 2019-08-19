@@ -2,11 +2,11 @@
 #include "testlib.h"
 
 using namespace std;
-int maxl = 1000;
+int maxl = 50000;
 string bits = "01";
 
 string gen_random() {
-  return rnd.next("[0-1]{1, 1000}");
+  return rnd.next("[0-1]{1, 50000}");
 }
 
 string gen_pure(int len) {
