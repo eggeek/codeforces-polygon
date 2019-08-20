@@ -1,0 +1,10 @@
+The first line consists of three space separated integers \t{w}, \t{h} and \t{n},
+which are the width \t{w}, height \t{h} and the number of rectangle traversable region \t{n} ($1 \le \t{w},\t{h},\t{n} \le 100$).
+
+Then follow \t{n} lines, each line consists of four integers \t{`x1 y1 x2 y2'} without quotes,
+  denoting the rectangle traversable region:
+\begin{itemize}
+  \item \t{x1,x2} represent column coordinate($0\leq\t{x1}\leq\t{x2}<\t{w}$)
+  \item \t{y1,y2} represent row coordinate($0 \leq\t{y1}\leq\t{y2}<\t{h}$)
+  \item all cells $(\t{x}, \t{y})$ such that $\t{x1} \leq \t{x} \leq \t{x2}\ \t{and}\ \t{y1} \leq \t{y} \leq \t{y2}$ are traversable.
+\end{itemize}
