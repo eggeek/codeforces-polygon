@@ -1,0 +1,11 @@
+In \t{KMP}, when the matching failed on $i$-th position of pattern, we will fall back to the $\mathbf{pre_{i-1}}$ position, 
+   and assume $\mathbf{0}$ to $\mathbf{pre_{i-1}-1}$ are matched.
+
+Formally speaking: let \t{p} be the pattern string,
+$\mathrm{pre_i}$ satisfies that the length of the longest proper suffix of $p[0 \dots i]$ that is also a proper prefix of $p[0 \ldots i]$:
+
+\[
+ p[0 \ldots \mathrm{pre_i}-1] = p[i- \mathrm{pre_i}+1 \ldots i]
+\]
+
+You task is to compute all $\mathrm{pre_i}$ ($0\le i < |p|$) based on definition.
