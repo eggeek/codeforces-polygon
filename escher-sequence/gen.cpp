@@ -46,6 +46,16 @@ string gen_hybrid2(int tot) {
   return s;
 }
 
+string gen_worst(int tot) {
+  string res = "";
+  for (int i=0; i<tot-2; i++) {
+    if (i%2) res.push_back('0');
+    else res.push_back('1');
+  }
+  while ((int)res.size() < tot) res.push_back('1');
+  return res;
+}
+
 int main(int argc, char* argv[]) {
   registerGen(argc, argv, 1);
   string t = string(argv[1]);
@@ -71,6 +81,9 @@ int main(int argc, char* argv[]) {
   }
   else if (t == "pure-max") {
     res = gen_pure(maxl);
+  }
+  else if (t == "worst") {
+    res = gen_worst(maxl);
   }
   cout << res << endl;
   return 0;

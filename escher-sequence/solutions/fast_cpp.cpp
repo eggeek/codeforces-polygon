@@ -23,7 +23,7 @@ vector<int> init_pre(string& p) {
 
 int main() {
   cin >> s;
-  string s2 = trans() + s;
+  string s2 = trans() + "$" + s;
   vector<int> pre = init_pre(s2);
   int m = s.size();
   int len = s.size() * 2 - min(pre.back(), m);
