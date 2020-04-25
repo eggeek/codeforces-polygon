@@ -1,0 +1,12 @@
+The road network is an \textbf{infinite} 4-connected grid map, Farmer John is driving his broken car from $(s_x,\ s_y)$ 
+to repair station $(t_x,\ t_y)$. The start location and repair station are in different places,
+and $t_x \ge s_x, t_y \ge s_y$.
+
+At the time $0$, Farmer John is at $(s_x,\ s_y)$ and start driving, the speed of the car is 1 cell per second.
+Due to some mechanical issues, the broken car \textbf{can not stop} until reaching the repair station, and Farmer John has to change the direction in every $m$ seconds.
+
+For example, he can drive in whatever direction from $1$ to $m$ seconds, the driving direction at the $m+1$ second must be different from the $m$ second, and so on.
+
+Farmer John is wondering how many different paths to the repair station with the minimum time?
+
+Output the minimum time and the number of possible ways modulo $1000000007$.
